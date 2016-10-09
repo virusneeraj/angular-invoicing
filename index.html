@@ -93,6 +93,8 @@
       <div class="row">
         <div class="col-xs-10 text-right">Grand Total:</div>
         <div class="col-xs-2 text-right">{{calculateGrandTotal() | currency: currencySymbol}}</div>
+        <div class="col-xs-3 text-left">Amount in Words({{currencySymbol}}):</div>
+        <div class="col-xs-9 text-right">{{numToWords(calculateGrandTotal())}}</div>
       </div>
     </div>
     <div class="row noPrint actions">
@@ -104,11 +106,9 @@
   </div>
 
   <div ng-hide="printMode" class="copy noPrint">
-    <a href="http://jasdeep.ca/?utm_source=angular_invoicing">Jasdeep Singh</a> &amp;
-    <a href="http://github.com/manpreetrules">Manpreet Singh</a>
+    <a href="https://www.facebook.com/virusneeraj">Neeraj Kumar Jha</a>
     Made with
-    <span class="love">&#9829;</span> in Toronto by
-    <a href="http://metawarelabs.com/?utm_source=angular_invoicing">Metaware Labs Inc.</a>
+    <span class="love">&#9829;</span>
   </div>
 </body>
 </html>
